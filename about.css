@@ -219,13 +219,18 @@ nav{
 
 @media(max-width:768px){
 
+    .about{
+        padding-top:100px;
+    }
+
     .about-container{
         flex-direction:column;
         gap:30px;
+        align-items:center;
     }
 
     .about-image{
-        margin-top:20px;
+        margin-top:0;
     }
 
     .about-image img{
