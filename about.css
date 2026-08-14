@@ -221,6 +221,11 @@ nav{
 
     .about-container{
         flex-direction:column;
+        gap:30px;
+    }
+
+    .about-image{
+        margin-top:20px;
     }
 
     .about-image img{
