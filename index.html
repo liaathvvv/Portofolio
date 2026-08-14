@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Aulia Munanisa</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="service.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="3000">
+                <img src="lia kartini 2.jpeg" alt="">
+            </div>
+            <div class="content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">
+                <h1>Hallo, Saya <span>Aulia</span></h1>
+                <h2 class="typing-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">Saya adalah <span></span></h2>
+                <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">Seorang pengembang web yang berfokus pada pembuatan situs web yang menarik dan fungsional.</p>
+                <div class="social-links">
+                    <a href="https://github.com/liaathvvv" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aulia-munanisa-63a656405/" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/liaathvv/" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/ZxyliaaV" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1500" ><i class="fa-brands fa-x"></i></a>
+                </div>
+                <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 0
+    });
+  </script>
+
+    <script>
+        function hamburg(){
+            const navbar =document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel(){
+            const navbar =document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-400px)";
+        }
+    </script>
+</body>
+</html>

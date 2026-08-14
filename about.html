@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+     <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Aulia Munanisa</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="service.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
+        </div>
+    </nav>
+    
+    <section class="about">
+
+    <div class="about-container">
+
+        <div class="about-image" data-aos="zoom-in-right" data-aos-duration="3000">
+            <img src="lia kartini 2.jpeg" alt="Aulia">
+        </div>
+
+        <div class="about-content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">
+
+            <h2>Halo, Saya <span>Aulia Munanisa</span></h2>
+
+            <p>
+                Saya adalah siswi SMK jurusan Rekayasa Perangkat Lunak
+                yang memiliki minat dalam Web Development, UI/UX Design,
+                serta senang mempelajari teknologi baru untuk membuat
+                website yang menarik dan responsif.
+            </p>
+
+            <div class="about-info">
+
+                <div class="card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Domisili</h3>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <h3>Pendidikan</h3>
+                        <p>SMK Plus Pelita Nusantara</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <h3>Fokus</h3>
+                        <p>Front-End Developer</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-language"></i>
+                    <div>
+                        <h3>Bahasa</h3>
+                        <p>Indonesia • English • Japanese</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="hobby-title">Hobi</h3>
+
+            <div class="hobby">
+                <span>Membaca Manhwa</span>
+                <span>Mendengarkan Musik</span>
+                <span>Movie dan Series</span>
+                <span>Belajar Bahasa Jepang</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 0
+    });
+  </script>
+
+    <script>
+        function hamburg(){
+            const navbar =document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel(){
+            const navbar =document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-400px)";
+        }
+    </script>
+</body>
+</html>

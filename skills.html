@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+     <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Aulia Munanisa</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="service.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
+        </div>
+    </nav>
+
+    <section class="skills">
+
+    <h1 class="skills-title" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">My <span>Skills</span></h1>
+
+    <p class="skills-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">
+        Berikut beberapa bahasa pemrograman, framework, dan tools yang saya gunakan
+        dalam proses belajar maupun membuat project.
+    </p>
+
+    <div class="skill-category">
+        <div class="category">
+            <h2>Frontend</h2>
+
+            <div class="tech-container">
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="category">
+
+            <h2>Backend</h2>
+
+            <div class="tech-container">
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-php"></i>
+                    <h3>PHP</h3>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-laravel"></i>
+                    <h3>Laravel</h3>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="category">
+
+            <h2>Tools</h2>
+
+            <div class="tech-container">
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>VS Code</h3>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 0
+    });
+  </script>
+
+    <script>
+        function hamburg(){
+            const navbar =document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel(){
+            const navbar =document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-400px)";
+        }
+    </script>
+</body>
+</html>
